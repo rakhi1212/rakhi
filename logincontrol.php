@@ -1,4 +1,4 @@
-<?php  
+<!--# 
     if($_SERVER["REQUEST_METHOD"] == "POST"){    
         include 'configuration.php' ;  
         
@@ -41,16 +41,18 @@
                 }
                 else{
                     echo "your Email account is not varified... please varify your account First";
+                   
                 }  
             }  
             else{  
-                echo "<h1> Login failed. Invalid username or password.</h1>";  
+                echo "<h1> Login failed. Invalid username or password </h1>"; 
+                
                 
             }
         
     }
 
-?> 
+?>  -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -65,10 +67,10 @@
         crossorigin="anonymous">
     </head>
     <body >
-        <div> <?php require 'nav.php'; ?></div>
+        <!-- <div> <?php require 'nav.php'; ?></div>
 
         <center><input class = "btn btn-primary" type="submit" value="GO BACK" onclick = " location.href = 'index.php'"> </center>
-        
+         -->
     </body>
 </html>
 
