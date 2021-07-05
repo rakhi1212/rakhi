@@ -60,8 +60,6 @@
     ?>
 
 
-    <form name="f1" action = "index.php" onsubmit = "return validation()" method = "POST">
-
     <?php
         if(isset($_SESSION['err'])){ ?>
             <h4 style="color:red"> <?php echo $_SESSION['err']; ?> </h4>
