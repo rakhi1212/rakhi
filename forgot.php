@@ -115,7 +115,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" href="login.php">Login</a>
+          <a class="nav-link active" href="index.php">Login</a>
           <a class="nav-link active" href="signup.php">Signup</a>
           
           <!--<a class="nav-link" href="#">Pricing</a>-->
@@ -128,7 +128,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 <div class="container mt-4">
 <!--
-<button class="btn btn-primary" type="button" onclick= "location.href ='login.php'">Login</button> 
+<button class="btn btn-primary" type="button" onclick= "location.href ='index.php'">Login</button> 
 
 or
 <button class="btn btn-primary" type="button" >SignUp</button>

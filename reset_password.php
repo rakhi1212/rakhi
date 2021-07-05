@@ -31,7 +31,7 @@
 
                         if($updatequery){
                             $_SESSION['msg'] = "Your password has been updated";
-                            header("location:login.php");
+                            header("location:index.php");
                         }
                         else{
                             $_SESSION['msg'] = "update error";
@@ -79,7 +79,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" href="login.php">Login</a>
+          <a class="nav-link active" href="index.php">Login</a>
           <a class="nav-link active" href="signup.php">Signup</a>
           
           <!--<a class="nav-link" href="#">Pricing</a>-->

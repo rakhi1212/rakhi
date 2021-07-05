@@ -12,7 +12,7 @@
 
     if($num == 1 ){
         $_SESSION['msg'] = 'your account is already activated';
-        header("location: login.php");
+        header("location: index.php");
     }    
     else{
 #        $sql = "select * from `user` where `token` = '$token'";
@@ -29,12 +29,12 @@
 
             if($result2){
                 $_SESSION['msg'] = 'account created successfully ';
-                header("location: login.php");
+                header("location: index.php");
             }
             else{
                 $_SESSION['start'] = true;
                 $_SESSION['msg'] = 'account not created ';
-                header("location: login.php");
+                header("location: index.php");
             }
 #        }
 #        else{

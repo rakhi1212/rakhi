@@ -67,7 +67,7 @@
     <body >
         <div> <?php require 'nav.php'; ?></div>
 
-        <center><input class = "btn btn-primary" type="submit" value="GO BACK" onclick = " location.href = 'login.php'"> </center>
+        <center><input class = "btn btn-primary" type="submit" value="GO BACK" onclick = " location.href = 'index.php'"> </center>
         
     </body>
 </html>
