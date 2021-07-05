@@ -43,14 +43,14 @@ session_start();
                 }
                 else{
                     // echo "your Email account is not varified... please varify your account First";
-                    $_SESSION['err'] = "Invalid Credential";
+                    $_SESSION['err'] = "your Email account is not varified... please verify your account First";
                     header("location: index.php");
 
                 }  
             }  
             else{  
                 // echo "<h1> Login failed. Invalid username or password.</h1>";  
-                $_SESSION['err'] = "Invalid Credential";
+                $_SESSION['err'] = " Login failed. Invalid username or password.";
                 header("location: index.php");
                 
             }

@@ -59,7 +59,7 @@
 
     <?php
         if(isset($_SESSION['err'])){ ?>
-            <h4 style="color:red"> <?php echo $_SESSION['err']; ?> </h4>
+            <h4> <?php echo $_SESSION['err']; ?> </h4>
        <?php } ?>
    
 
