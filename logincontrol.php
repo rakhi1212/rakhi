@@ -1,10 +1,8 @@
-<<<<<<< HEAD
-<!--# 
-=======
+
 <?php  
 
 session_start();
->>>>>>> DEVELOPMENT
+
     if($_SERVER["REQUEST_METHOD"] == "POST"){    
         include 'configuration.php' ;  
         
@@ -46,15 +44,7 @@ session_start();
                     header("location: dashboard.php");
                 }
                 else{
-<<<<<<< HEAD
-                    echo "your Email account is not varified... please varify your account First";
-                   
-                }  
-            }  
-            else{  
-                echo "<h1> Login failed. Invalid username or password </h1>"; 
-                
-=======
+
                     // echo "your Email account is not varified... please varify your account First";
                     $_SESSION['err'] = "Invalid Credential";
                     header("location: index.php");
@@ -65,7 +55,7 @@ session_start();
                 // echo "<h1> Login failed. Invalid username or password.</h1>";  
                 $_SESSION['err'] = "Invalid Credential";
                 header("location: index.php");
->>>>>>> DEVELOPMENT
+
                 
             }
         
