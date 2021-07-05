@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php  
     if($_SERVER["REQUEST_METHOD"] == "POST"){    
         include 'configuration.php' ;  
@@ -54,6 +55,9 @@
 
 ?> 
 
+=======
+<?php session_start(); ?>
+>>>>>>> DEVELOPMENT
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -112,7 +116,18 @@
         
     ?>
 
+<<<<<<< HEAD
     <form name="f1" action = "index.php" onsubmit = "return validation()" method = "POST">
+=======
+    <?php
+        if(isset($_SESSION['err'])){ ?>
+            <h4 style="color:red"> <?php echo $_SESSION['err']; ?> </h4>
+       <?php } ?>
+   
+
+
+    <form name="f1" action = "logincontrol.php" onsubmit = "return validation()" method = "POST">
+>>>>>>> DEVELOPMENT
         <label for="email">Email</label>
             <input type="text" class="form-control" id="email" name="email" aria-describedby="emailHelp">
             <br>
