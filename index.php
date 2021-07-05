@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,6 +56,13 @@
       //  }
         
     ?>
+
+    <?php
+        if(isset($_SESSION['err'])){ ?>
+            <h4 style="color:red"> <?php echo $_SESSION['err']; ?> </h4>
+       <?php } ?>
+   
+
 
     <form name="f1" action = "logincontrol.php" onsubmit = "return validation()" method = "POST">
         <label for="email">Email</label>
